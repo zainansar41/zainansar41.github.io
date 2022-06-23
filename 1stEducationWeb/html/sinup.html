@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="../css/joinStyle.css">
+    <!-- <link rel="stylesheet" href="../css/barStyle.css"> -->
+</head>
+
+<body>
+    <div class="containor">
+        <div class="form-box">
+            <a href="bar.html"><i class="fas fa-undo-alt"></i></a>
+            <div class="button">
+                <div id="btn"></div>
+                <!-- <button type="button" class="toogle">login</button> -->
+                <button type="button" class="toogle">register</button>
+            </div>
+            <div class="social">
+                <img src="../images/fb.png" alt="error">
+                <img src="../images/ins.png" alt="error">
+                <img src="../images/tw.jfif" alt="error">
+            </div>
+            <div class="inputf">
+                <i class="fas fa-user"></i>
+                <input type="text" placeholder="enter your name" required>
+            </div>
+            <div class="inputf">
+                <i class="fas fa-envelope"></i>
+                <input type="text" placeholder="enter your email" required>
+            </div>
+            <div class="pass inputf">
+                <i class="fas fa-key"></i>
+                <input type="password" placeholder="enter your password" required>
+            </div>
+            <div class="text">already have an account? <a href="login.html">click here</a></div>
+            <div class="button1 inputf">
+                <button type="submit">register</button>
+                <!-- <input type="submit" > -->
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    var x = document.getElementById("login");
+    var y = document.getElementById("register");
+    var z = document.getElementById("btn");
+
+    function register() {
+        x.style.left = "-400px";
+        y.style.left = "50px";
+        z.style.left = "110px";
+    }
+    function login() {
+        x.style.left = "50";
+        y.style.left = "450px";
+        z.style.left = "0px";
+    }
+</script>
+
+</html>

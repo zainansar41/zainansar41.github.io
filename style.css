@@ -1,0 +1,629 @@
+@import url('https://fonts.googleapis.com/css2?family=Neonderthaw&family=Raleway:ital,wght@1,500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Raleway, Times, serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    /* background: url('com.jpg') no-repeat center;
+    background-size: cover; */
+    /* width: auto; */
+    height: 100vh;
+}
+.scroll{
+    position: fixed;
+    height: 40px;
+    width: 38px;
+    color: white;
+    background: red;
+    right: 10px;
+    bottom: 10px;
+    border-radius: 4px;
+    text-align: center;
+    align-items: center;
+    line-height: 40px;
+    z-index: 9999;
+    opacity: 0;
+    pointer-events: none;
+    transition: .5s ease;
+}
+.scroll.show{
+    opacity: 1;
+    pointer-events: auto;
+}
+.navbar{
+    position: fixed;
+    /* background: black; */
+    padding: 20px 0 0 0;
+    width: 100%;
+    height: 60px;
+    /* margin: 10px; */
+    transition: .7s ease;
+    z-index: 999;
+
+    
+   
+}
+.navbar.sticky{
+    padding: 7px 0 0 0;
+    background: crimson;
+    height: 35px;
+
+} 
+.navbar.sticky .def .name{
+    font-size: 1.5em;
+}
+.navbar.sticky .def ul li{
+    font-size: 1em;
+    padding: 7px 0 0 0;
+}
+.navbar.sticky ul li a{
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1em;
+    color: white;
+}
+.navbar .def{
+    display: flex;
+    justify-content: space-around;
+}
+.navbar strong{
+    color: red;
+    transition: .7s ease;
+
+}
+.navbar.sticky strong{
+    color: white;
+}
+.navbar .name{
+    font-size: 2em;
+    color: white;
+    font-weight: bold;
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    /* justify-content: space-between; */
+    
+}
+
+.navbar ul li{
+    padding: 10px 0 0 0;
+    display: inline-block;
+    margin-left: 20px;
+}
+.navbar ul li a{
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.4em;
+    color: white;
+}
+.navbar ul li a:hover{
+    color: red;
+    transition: .5s ease; 
+}
+.navbar.sticky ul li a:hover{
+    color: black;
+}
+
+.menu-btn{
+    padding: 5px 0 0 0;
+    font-size: 23px;
+    color: white;
+    cursor:pointer;
+    display: none;
+}
+
+.home{
+    display: flex;
+    background: url('com.jpg') no-repeat center;
+    height: 100vh;
+    background-size: cover;
+    /* padding-top: 12%;
+    padding-left: 22%; */
+    color: white;
+}
+.home .abc{
+    margin: 250px 0 auto 20%;
+}
+.home .abc .text1{
+    font-size: 1.2em;
+    margin-bottom: 7px;
+}
+.home .abc .text2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    font-weight: bold;
+    color: red;
+    font-size: 2.7em;
+    margin-bottom: 7px;
+
+}
+.home .abc .text3{
+    font-size: 1.7em;
+    margin-bottom: 7px;
+
+}
+.home .abc .text3 span{
+    color: red;
+}
+.home .abc button{
+    /* margin-top: 7%;
+    margin-left: 20%; */
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    color: white;
+    background: red;
+    text-align: center;
+    width: 100px;
+    height: 40px;
+    transition: .5s ease;
+}
+.home .abc button:hover{
+    color:red;
+    background: none;
+    border: 2px solid red;
+    
+}
+.about{
+    
+    padding: 80px 0 10px 20px;
+}
+.about .title{
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 40px;
+    font-size: 2em;
+}
+.about .about-con{
+    max-width: 100vw;
+    display: flex;
+}
+.about .about-con .left img{
+    height: 375px;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.about .about-con .right{
+    font-size: 16px;
+    margin: 34px 157px;
+    text-align: justify;
+    width: 55%;
+}
+.about .about-con .right .text{
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+.about .about-con .right .text span{
+    color: red;
+}
+.about .about-con .right p{
+    margin-bottom: 35px;
+}
+.about .about-con .right a{
+    /* margin-left:35%; */
+    /* margin-top: 35px; */
+    background: red;
+    color: white;
+    height: 40px;
+    width: 100px;
+    padding: 10px 20px;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 9px;
+    justify-content: center;
+    text-decoration: none;
+    transition: .5s ease;
+}
+.about .about-con .right a:hover{
+    padding: 8px 18px;
+    background: white;
+    color: red;
+    border: 2px solid red;
+}
+
+
+
+.services{
+    margin-top: 50px;
+    background: black;
+    color: white;
+    padding: 50px 0;
+    
+}
+.services .def .title{
+    text-align: center;
+    padding-bottom: 30px;
+}
+.services .servises-con{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin:0 50px ;
+}
+.services .servises-con .card{
+    height: 150px;
+    width: calc(33% - 30px);
+    background: #222;
+    border-radius: 7px;
+    padding: 30px 10px;
+    cursor: pointer;
+    text-align: center;
+    transition: .5s ease;
+}
+.services .servises-con .card:hover {
+    background: red;
+}
+.services .servises-con .card i{
+    color: red;
+    font-size: 1.7em;
+    margin: 7px 0;
+    transition: .5s ease;
+}
+.services .servises-con .card:hover i{
+    color: white;
+}
+.services .servises-con .card .text{
+    /* color: red; */
+    font-size: 1.3em;
+    margin: 7px 0;
+}
+.services .servises-con .card .box{
+    transition: .5s ease ;
+}
+.services .servises-con .card:hover .box{
+    transform: scale(1.05);
+}
+.services .servises-con .card .box p{
+    text-align: justify;
+}
+
+
+
+.projects{
+    margin-top: 50px;
+    background: white;
+    color: black;
+    padding: 50px 0;
+    border: 5px solid black;
+    border-radius: 7px;
+    
+}
+.projects .def .title{
+    text-align: center;
+    padding-bottom: 30px;
+}
+.projects .projects-con{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin:0 50px ;
+}
+.projects .projects-con .card{
+    height: 150px;
+    width: calc(33% - 30px);
+    background: #222;
+    border-radius: 7px;
+    padding: 30px 10px;
+    cursor: pointer;
+    text-align: center;
+    transition: .5s ease;
+}
+.projects .projects-con .card:hover {
+    background: red;
+}
+.projects .projects-con .card .box{
+    color: white;
+}
+.projects .projects-con .card .text{
+    /* color: red; */
+    font-size: 1.3em;
+    margin: 7px 0;
+}
+.projects .projects-con .card .box{
+    transition: .5s ease ;
+}
+.projects .projects-con .card:hover .box{
+    transform: scale(1.05);
+}
+.projects .projects-con .card .box p{
+    text-align: justify;
+    margin: 10px 0 20px;
+}
+.projects .projects-con .card .box a{
+    color:  #222;
+    text-decoration: none;
+    margin-top: 10px;
+    background: white;
+    padding: 7px 10px;
+    border-radius: 5px;
+    transition: .5s ease;
+}
+.projects .projects-con .card .box a:hover{
+    color: red;
+    font-weight: 500;
+    padding: 5px 8px;
+    border: 2px solid #222;
+}
+
+
+
+.contact{
+    margin-top: 50px;
+    background: black;
+    color: white;
+    padding: 50px 0;
+    
+}
+.contact .def .title{
+    text-align: center;
+    padding-bottom: 30px;
+}
+.contact .def .info{
+    margin: 0 0 40px 30px;
+}
+.contact .def .info .txt{
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+.contact .def .form{
+    justify-content: center;
+    text-align: center;
+}
+.contact .def .inputf{
+    font-size: 1.5em;
+    margin-bottom: 40px;
+    justify-content: space-between;
+}
+.contact .def .inputf i{
+    margin-right: 30px;
+}
+.contact .def .inputf input{
+    width: 400px;
+    height: 30px;
+    border-bottom: 2px solid rgb(198, 59, 59);
+    border-radius: 8px;
+    text-align: center;
+    font-size: .8em;
+}
+.contact .def button{
+    font-size: 1em;
+    height: 40px;
+    width: 100px;
+    border-radius: 8px;
+    color: white;
+    background: red;
+    transition: .5s ease;
+}
+.contact .def button:hover{
+    background: none;
+    color: red ;
+    border: 2px solid red;
+    cursor: pointer;
+}
+.footer .def{
+    margin-left: 20px;
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 50px;
+    font-size: 1em;
+    margin-bottom: 30px;
+}
+.footer .def .column2{
+    font-size: 1.5em;
+}
+.footer .def .column2 .text{
+    font-size: 1em;
+    /* text-align: center; */
+    margin-bottom: 10px;
+}
+.footer .def .column2 a{
+    color: black;
+    margin: 10px 25px 10px 0;
+}
+.footer h5{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.footer h5 strong{
+    font-weight: 900;
+    font-size: 1.8em;
+}
+@media screen and  (max-width:1200px) {
+    .home .abc{
+        margin: 200px 0 auto 20%;
+    }   
+    .about .about-con .right{
+        font-size: 16px;
+        margin: 34px 100px;
+        text-align: justify;
+        width: 55%;
+    }
+}
+@media screen and  (max-width:1000px) {
+    .about .about-con .right{
+        font-size: 16px;
+        margin: 34px 50px;
+        text-align: justify;
+        width: 55%;
+    }
+    .services .servises-con .card{
+        width: calc(50% - 30px); 
+        margin-bottom: 40px;
+    }
+    .projects .projects-con .card{
+        width: calc(50% - 30px); 
+        margin-bottom: 40px;
+    }
+}
+@media screen and  (max-width:850px) {
+    .about .about-con .right{
+        font-size: 16px;
+        margin: 34px 25px;
+        text-align: justify;
+        width: 55%;
+    }
+    .about .about-con .right a{
+        margin-left:20%;
+    }
+}
+@media screen and  (max-width:750px){
+    .about .about-con{
+        /* max-width: 100vw; */
+        display: block;
+        justify-content: center;
+        text-align: center;
+    }
+    .about .about-con .right{
+        font-size: 16px;
+        margin: 34px 20%;
+        text-align: justify;
+        width: 65%;
+    }
+    .services .servises-con .card{
+        width: 90%; 
+        margin-bottom: 40px;
+    }
+    .services .servises-con{
+        justify-content: center;
+    }
+    .projects .projects-con .card{
+        width: 90%; 
+        margin-bottom: 40px;
+    }
+    .projects .projects-con{
+        justify-content: center;
+    }
+    .scroll.show {
+        opacity: 1;
+        pointer-events: auto;
+        right: 10px;
+        bottom: 10px;
+    }
+}
+
+@media (max-width:950px){
+    .navbar li{
+        padding: 10px 0 0 0;
+    
+        margin-left: 20px;
+    }
+    .navbar .def{
+        padding: 0 30px;
+        justify-content: space-between;
+    }
+    .menu-btn{
+        right: 10px;
+        display: block;
+        z-index: 999;
+        color: white;
+    }
+    .menu-btn i.active::before{
+        content: "\f00d";
+    }
+    .navbar ul{
+        position: fixed;
+        background: black;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        display: block;
+        text-align: center;
+        padding-top: 80px;
+        transition: .5s ease;
+    }
+    .navbar ul.active{
+        left: 0;
+    }
+    .navbar ul li{
+        display: block;
+    }
+    .navbar ul li a{
+        font-size: 1.7em;
+        font-weight: 900;
+        display: inline-block;
+        margin: 30px 0;
+    }
+    
+    
+    
+}
+@media (max-width: 490px){
+    .home .abc {
+        margin: 200px 0 auto 5%;
+    }
+    .about{
+        padding: 80px 0 10px 0px;
+    }
+    .about .about-con .right a{
+        margin-left:0;
+        
+    }
+    .about .about-con .right{
+        font-size: 16px;
+        margin: 34px 10%;
+        text-align: justify;
+        width: 75%;
+    }
+    .services .servises-con .card{
+        height: 250px;
+    }
+    .projects .projects-con .card{
+        height: 220px;
+    }
+    .services .servises-con .card .text{
+        /* color: red; */
+        font-size: 1.3em;
+        margin: 20px 0;
+    } 
+    .contact{
+        padding: 25px 0;
+        
+    }
+    .contact .def .inputf input{
+        width: auto;
+    }
+
+
+}
+@media (max-width: 350px){
+    .about{
+        padding: 80px 0 10px 0px;
+    }
+    .about .about-con .right a{
+        margin-left:0;
+        
+    }
+    .about .about-con .left img{
+        height: 300px;
+        width: 225px;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+    .about .about-con .right{
+        font-size: 16px;
+        margin: 34px 3%;
+        text-align: justify;
+        width: 92%;
+    }
+    .services .servises-con .card .text{
+        /* color: red; */
+        font-size: 1.3em;
+        margin: 10px 0;
+    }  
+}
+@media (max-width: 280px){
+    .about .about-con .right a{
+        margin-left:15%;
+        padding: 7px 15px;
+        font-size: 16px;
+    }
+}
