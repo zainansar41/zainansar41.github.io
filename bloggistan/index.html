@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloggistan</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="app.js"></script>
+</head>
+
+<body>
+    <input type="checkbox" id="check">
+    <label for="check">
+        <i class="fas fa-bars" id="btn"></i>
+        <i class="fas fa-times" id="cancel"></i>
+    </label>
+    <div class="slidebar">
+        <header>
+            <h4>Bloggistan</h4>
+        </header>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#photo">Photography</a></li>
+            <li><a href="#blog">Blogs</a></li>
+            <li><a href="#service">Services</a></li>
+            <li><a href="#about">About</a></li>
+
+    </div>
+    <section>
+        <h1>BLOGGISTAN</h1>
+        <div><a class="a" href="">Explore!</a>
+            <a class="b" href="">Hire me!</a>
+        </div>
+        <br><br><br>
+        <div>
+            <h3 class="tooltip">Its more than blogging...
+                <span class="tooltiptext">Photography and Blogging</span>
+            </h3>
+        </div>
+    </section>
+    <h1 class="gallery" id="photo">Gallery</h1>
+    <div class="photo" >
+        <div class="item4">
+            <img src="item4.jpg" alt="">
+            <div class="menu">
+                <div class="hero">
+                    <a href="">Visit</a>
+                    <a href="">More</a>
+                </div>
+                <div class="likes">
+                    <p id="heart1">151</p>
+                    <i id="c1" class="fa-solid fa-heart" onclick="count1()"></i>
+                </div>
+            </div>
+        </div>
+        <div class="item7">
+            <img src="item7.jpg" alt="">
+            <div class="menu">
+                <div class="hero">
+                    <a href="">Visit</a>
+                    <a href="">More</a>
+                </div>
+                <div class="likes">
+                    <p id="heart8">3001</p>
+                    <i id="c8" class="fa-solid fa-heart" onclick="count8()"></i>
+                </div>
+            </div>
+        </div>
+        <div class="item1">
+            <img src="item1.jpg" alt="">
+            <div class="menu">
+                <div class="hero">
+                    <a href="">Visit</a>
+                    <a href="">More</a>
+                </div>
+                <div class="likes">
+                    <p id="heart2">781</p>
+                    <i id="c2" class="fa-solid fa-heart" onclick="count2()"></i>
+                </div>
+            </div>
+        </div>
+        <div class="item2">
+            <img src="item2.jpg" alt="">
+            <div class="menu">
+                <div class="hero">
+                    <a href="">Visit</a>
+                    <a href="">More</a>
+                </div>
+                <div class="likes">
+                    <p id="heart3">191</p>
+                    <i id="c3" class="fa-solid fa-heart" onclick="count3()"></i>
+                </div>
+            </div>
+        </div>
+        <div class="item3">
+            <img src="item3.jpg" alt="">
+            <div class="menu">
+                <div class="hero">
+                    <a href="">Visit</a>
+                    <a href="">More</a>
+                </div>
+                <div class="likes">
+                    <p id="heart4">1500</p>
+                    <i id="c4" class="fa-solid fa-heart" onclick="count4()"></i>
+                </div>
+            </div>
+        </div>
+        <div class="item8">
+            <img src="item8.jpg" alt="">
+            <div class="menu">
+                <div class="hero">
+                    <a href="">Visit</a>
+                    <a href="">More</a>
+                </div>
+                <div class="likes">
+                    <p id="heart5">1101</p>
+                    <i id="c5" class="fa-solid fa-heart" onclick="count5()"></i>
+                </div>
+            </div>
+        </div>
+        <div class="item5">
+            <img src="item5.jpg" alt="">
+            <div class="menu">
+                <div class="hero">
+                    <a href="">Visit</a>
+                    <a href="">More</a>
+                </div>
+                <div class="likes">
+                    <p id="heart6">678</p>
+                    <i id="c6" class="fa-solid fa-heart" onclick="count6()"></i>
+                </div>
+            </div>
+        </div>
+        <div class="item6">
+            <img src="item6.jpg" alt="">
+            <div class="menu">
+                <div class="hero">
+                    <a href="">Visit</a>
+                    <a href="">More</a>
+                </div>
+                <div class="likes">
+                    <p id="heart7">451</p>
+                    <i id="c7" class="fa-solid fa-heart" onclick="count7()"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="blog" id="blog">
+        <div class="buttons">
+            <button onclick="all()">
+                All
+            </button>
+            <button class="wild" onclick="wildLife()">
+                Wild life
+            </button>
+            <br>
+            <button class="btn" onclick="shoot()">
+                Shooting
+            </button>
+            <button onclick="wedding()">
+                wedding
+            </button>
+        </div>
+        <div class="def">
+            <div class="dir1 der1" id="dir1">
+                <div class="vid">
+                    <p class="none"></p>
+                    <div class="content">
+                        <h3>The Street of lights </h3>
+                        <div class="menu">
+                            <div class="hero">
+                                <a href="">see</a>
+                                <a href="">More</a>
+                            </div>
+                            <div class="likes">
+                                <p id="heart1">1510</p>
+                                <i id="c1" class="fa-solid fa-heart" onclick="count1()"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="exp">
+                    <h2>The Street of lights</h2>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt alias velit necessitatibus voluptates voluptatem repellendus ratione! Beatae, velit odit, necessitatibus distinctio mollitia dicta debitis cumque officiis fugit itaque perferendis tempore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae repudiandae odio sit temporibus cum architecto ducimus, saepe aperiam inventore. Blanditiis veniam, eligendi eum ex architecto autem impedit minima? Veritatis, illo!</p>
+                </div>
+            </div>
+            <div class="dir1 dir2" id="dir2">
+                <div class="exp">
+                    <h2>Love Of Life</h2>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt alias velit necessitatibus voluptates voluptatem repellendus ratione! Beatae, velit odit, necessitatibus distinctio mollitia dicta debitis cumque officiis fugit itaque perferendis tempore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae repudiandae odio sit temporibus cum architecto ducimus, saepe aperiam inventore. Blanditiis veniam, eligendi eum ex architecto autem impedit minima? Veritatis, illo!</p>
+                </div>
+                <div class="vid">
+                    <p class="none"></p>
+                    <div class="content">
+                        <h3>Love Of Life </h3>
+                        <div class="menu">
+                            <div class="hero">
+                                <a href="">see</a>
+                                <a href="">More</a>
+                            </div>
+                            <div class="likes">
+                                <p id="heart1">1510</p>
+                                <i id="c1" class="fa-solid fa-heart" onclick="count1()"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dir1 dir3" id="dir3">
+                <div class="vid">
+                    <p class="none"></p>
+                    <div class="content">
+                        <h3>Why I choose Photography</h3>
+                        <div class="menu">
+                            <div class="hero">
+                                <a href="">see</a>
+                                <a href="">More</a>
+                            </div>
+                            <div class="likes">
+                                <p id="heart1">1510</p>
+                                <i id="c1" class="fa-solid fa-heart" onclick="count1()"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="exp">
+                    <h2>Why I choose Photography</h2>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt alias velit necessitatibus voluptates voluptatem repellendus ratione! Beatae, velit odit, necessitatibus distinctio mollitia dicta debitis cumque officiis fugit itaque perferendis tempore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae repudiandae odio sit temporibus cum architecto ducimus, saepe aperiam inventore. Blanditiis veniam, eligendi eum ex architecto autem impedit minima? Veritatis, illo!</p>
+                </div>
+            </div>
+            <div class="dir1 dir4" id="dir4">
+                <div class="exp">
+                    <h2>"Nature" the Art of God</h2>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt alias velit necessitatibus voluptates voluptatem repellendus ratione! Beatae, velit odit, necessitatibus distinctio mollitia dicta debitis cumque officiis fugit itaque perferendis tempore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae repudiandae odio sit temporibus cum architecto ducimus, saepe aperiam inventore. Blanditiis veniam, eligendi eum ex architecto autem impedit minima? Veritatis, illo!</p>
+                </div>
+                <div class="vid">
+                    <p class="none"></p>
+                    <div class="content">
+                        <h3>"Nature" the Art of God</h3>
+                        <div class="menu">
+                            <div class="hero">
+                                <a href="">see</a>
+                                <a href="">More</a>
+                            </div>
+                            <div class="likes">
+                                <p id="heart1">1510</p>
+                                <i id="c1" class="fa-solid fa-heart" onclick="count1()"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dir1 dir5" style="display: none;" id="dir5">
+                <div class="vid">
+                    <p class="none"></p>
+                    <div class="content">
+                        <h3>Food Is Life</h3>
+                        <div class="menu">
+                            <div class="hero">
+                                <a href="">see</a>
+                                <a href="">More</a>
+                            </div>
+                            <div class="likes">
+                                <p id="heart1">1510</p>
+                                <i id="c1" class="fa-solid fa-heart" onclick="count1()"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="exp">
+                    <h2>Food Is Life</h2>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt alias velit necessitatibus voluptates voluptatem repellendus ratione! Beatae, velit odit, necessitatibus distinctio mollitia dicta debitis cumque officiis fugit itaque perferendis tempore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae repudiandae odio sit temporibus cum architecto ducimus, saepe aperiam inventore. Blanditiis veniam, eligendi eum ex architecto autem impedit minima? Veritatis, illo!</p>
+                </div>
+            </div>
+            <div class="dir1 dir6" style="display: none;" id="dir6">
+                <div class="exp">
+                    <h2>Love Marriage</h2>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt alias velit necessitatibus voluptates voluptatem repellendus ratione! Beatae, velit odit, necessitatibus distinctio mollitia dicta debitis cumque officiis fugit itaque perferendis tempore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae repudiandae odio sit temporibus cum architecto ducimus, saepe aperiam inventore. Blanditiis veniam, eligendi eum ex architecto autem impedit minima? Veritatis, illo!</p>
+                </div>
+                <div class="vid">
+                    <p class="none"></p>
+                    <div class="content">
+                        <h3>Love Marriage</h3>
+                        <div class="menu">
+                            <div class="hero">
+                                <a href="">see</a>
+                                <a href="">More</a>
+                            </div>
+                            <div class="likes">
+                                <p id="heart1">1510</p>
+                                <i id="c1" class="fa-solid fa-heart" onclick="count1()"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dir1 dir7" style="display: none;" id="dir7">
+                <div class="vid">
+                    <p class="none"></p>
+                    <div class="content">
+                        <h3>Profession of Happiness</h3>
+                        <div class="menu">
+                            <div class="hero">
+                                <a href="">see</a>
+                                <a href="">More</a>
+                            </div>
+                            <div class="likes">
+                                <p id="heart1">1510</p>
+                                <i id="c1" class="fa-solid fa-heart" onclick="count1()"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="exp">
+                    <h2>Profession of Happiness</h2>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt alias velit necessitatibus voluptates voluptatem repellendus ratione! Beatae, velit odit, necessitatibus distinctio mollitia dicta debitis cumque officiis fugit itaque perferendis tempore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae repudiandae odio sit temporibus cum architecto ducimus, saepe aperiam inventore. Blanditiis veniam, eligendi eum ex architecto autem impedit minima? Veritatis, illo!</p>
+                </div>
+            </div>
+            <div class="dir1 dir8" style="display: none;" id="dir8"> 
+                <div class="exp">
+                    <h2>The Place Of Peace</h2>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt alias velit necessitatibus voluptates voluptatem repellendus ratione! Beatae, velit odit, necessitatibus distinctio mollitia dicta debitis cumque officiis fugit itaque perferendis tempore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae repudiandae odio sit temporibus cum architecto ducimus, saepe aperiam inventore. Blanditiis veniam, eligendi eum ex architecto autem impedit minima? Veritatis, illo!</p>
+                </div>
+                <div class="vid">
+                    <p class="none"></p>
+                    <div class="content">
+                        <h3>The Place Of Peace</h3>
+                        <div class="menu">
+                            <div class="hero">
+                                <a href="">see</a>
+                                <a href="">More</a>
+                            </div>
+                            <div class="likes">
+                                <p id="heart1">1510</p>
+                                <i id="c1" class="fa-solid fa-heart" onclick="count1()"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dir1 dir9" style="display: none;" id="dir9">
+                <div class="vid">
+                    <p class="none"></p>
+                    <div class="content">
+                        <h3>The calmness of Nature</h3>
+                        <div class="menu">
+                            <div class="hero">
+                                <a href="">see</a>
+                                <a href="">More</a>
+                            </div>
+                            <div class="likes">
+                                <p id="heart1">1510</p>
+                                <i id="c1" class="fa-solid fa-heart" onclick="count1()"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="exp">
+                    <h2>The calmness of Nature</h2>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt alias velit necessitatibus voluptates voluptatem repellendus ratione! Beatae, velit odit, necessitatibus distinctio mollitia dicta debitis cumque officiis fugit itaque perferendis tempore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae repudiandae odio sit temporibus cum architecto ducimus, saepe aperiam inventore. Blanditiis veniam, eligendi eum ex architecto autem impedit minima? Veritatis, illo!</p>
+                </div>
+            </div>
+            <div class="dir1 dir10" style="display: none;" id="dir10">
+                <div class="exp">
+                    <h2>Life In Europe</h2>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt alias velit necessitatibus voluptates voluptatem repellendus ratione! Beatae, velit odit, necessitatibus distinctio mollitia dicta debitis cumque officiis fugit itaque perferendis tempore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae repudiandae odio sit temporibus cum architecto ducimus, saepe aperiam inventore. Blanditiis veniam, eligendi eum ex architecto autem impedit minima? Veritatis, illo!</p>
+                </div>
+                <div class="vid">
+                    <p class="none"></p>
+                    <div class="content">
+                        <h3>Life In Europe</h3>
+                        <div class="menu">
+                            <div class="hero">
+                                <a href="">see</a>
+                                <a href="">More</a>
+                            </div>
+                            <div class="likes">
+                                <p id="heart1">1510</p>
+                                <i id="c1" class="fa-solid fa-heart" onclick="count1()"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dir1 dir11" style="display: none;" id="dir11">
+                <div class="vid">
+                    <p class="none"></p>
+                    <div class="content">
+                        <h3>purity in Water</h3>
+                        <div class="menu">
+                            <div class="hero">
+                                <a href="">see</a>
+                                <a href="">More</a>
+                            </div>
+                            <div class="likes">
+                                <p id="heart1">1510</p>
+                                <i id="c1" class="fa-solid fa-heart" onclick="count1()"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="exp">
+                    <h2>purity in Water</h2>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt alias velit necessitatibus voluptates voluptatem repellendus ratione! Beatae, velit odit, necessitatibus distinctio mollitia dicta debitis cumque officiis fugit itaque perferendis tempore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae repudiandae odio sit temporibus cum architecto ducimus, saepe aperiam inventore. Blanditiis veniam, eligendi eum ex architecto autem impedit minima? Veritatis, illo!</p>
+                </div>
+            </div>
+            <div class="dir1 dir12" style="display: none;" id="dir12">
+                <div class="exp">
+                    <h2>Life of Bird</h2>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt alias velit necessitatibus voluptates voluptatem repellendus ratione! Beatae, velit odit, necessitatibus distinctio mollitia dicta debitis cumque officiis fugit itaque perferendis tempore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae repudiandae odio sit temporibus cum architecto ducimus, saepe aperiam inventore. Blanditiis veniam, eligendi eum ex architecto autem impedit minima? Veritatis, illo!</p>
+                </div>
+                <div class="vid">
+                    <p class="none"></p>
+                    <div class="content">
+                        <h3>Life of Bird</h3>
+                        <div class="menu">
+                            <div class="hero">
+                                <a href="">see</a>
+                                <a href="">More</a>
+                            </div>
+                            <div class="likes">
+                                <p id="heart1">1510</p>
+                                <i id="c1" class="fa-solid fa-heart" onclick="count1()"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dir1 dir13" style="display: none;" id="dir13">
+                <div class="vid">
+                    <p class="none"></p>
+                    <div class="content">
+                        <h3>Succesfull Wedding</h3>
+                        <div class="menu">
+                            <div class="hero">
+                                <a href="">see</a>
+                                <a href="">More</a>
+                            </div>
+                            <div class="likes">
+                                <p id="heart1">1510</p>
+                                <i id="c1" class="fa-solid fa-heart" onclick="count1()"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="exp">
+                    <h2>Succesfull Wedding</h2>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt alias velit necessitatibus voluptates voluptatem repellendus ratione! Beatae, velit odit, necessitatibus distinctio mollitia dicta debitis cumque officiis fugit itaque perferendis tempore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae repudiandae odio sit temporibus cum architecto ducimus, saepe aperiam inventore. Blanditiis veniam, eligendi eum ex architecto autem impedit minima? Veritatis, illo!</p>
+                </div>
+            </div>
+            <div class="dir1 dir14" style="display: none;" id="dir14">
+                <div class="exp">
+                    <h2>Be like King</h2>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt alias velit necessitatibus voluptates voluptatem repellendus ratione! Beatae, velit odit, necessitatibus distinctio mollitia dicta debitis cumque officiis fugit itaque perferendis tempore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae repudiandae odio sit temporibus cum architecto ducimus, saepe aperiam inventore. Blanditiis veniam, eligendi eum ex architecto autem impedit minima? Veritatis, illo!</p>
+                </div>
+                <div class="vid">
+                    <p class="none"></p>
+                    <div class="content">
+                        <h3>Be like King</h3>
+                        <div class="menu">
+                            <div class="hero">
+                                <a href="">see</a>
+                                <a href="">More</a>
+                            </div>
+                            <div class="likes">
+                                <p id="heart1">1510</p>
+                                <i id="c1" class="fa-solid fa-heart" onclick="count1()"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="service" id="service">
+        <h1>Services I provide</h1>
+        <div class="ser_con">
+            <div class="card">
+                <div class="box">
+                    <i class="fa fa-paint-brush"></i>
+                    <h3>Editing</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam, ducimus sapiente iste recusandae maxime quam?</p>
+                    <a href="">Learn more</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="box">
+                    <i class="fa-solid fa-camera"></i>
+                    <h3>Photography</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam, ducimus sapiente iste recusandae maxime quam?</p>
+                    <a href="">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="contact">
+        <ion-icon name="logo-whatsapp"></ion-icon>
+        <h2>Send a message</h2>
+        <div class="msg">
+            <div class="inputf">
+                <i class="fas fa-user"></i>
+                <input type="text" placeholder="  enter your name" required>
+            </div>
+            <div class="pass inputf">
+                <i class="fas fa-envelope"></i>
+                <input type="email" placeholder="  enter your email" required>
+            </div>
+            <div class="pass inputf">
+                <i class="fa-solid fa-inbox"></i>
+                <input type="text" placeholder="  write your message" required>
+            </div>
+            
+            <div class="button inputf">
+                <button type="submit">send</button>
+            </div>
+        </div>
+    </div>
+    <div class="about" id="about">
+        <h2>BLOGGISTAN</h2>
+        <div class="content">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic quo odio repellat sequi cupiditate quos neque ut libero, quibusdam voluptatibus et, voluptate explicabo nemo molestias iusto placeat necessitatibus dicta culpa omnis? Placeat voluptatibus, impedit ut repudiandae laboriosam ab porro quasi?</p>
+            <div class="links">
+                <h4>Usefull links</h4>
+                <a href="#">Home</a>
+                <a href="#photo">Photography</a>
+                <a href="#blog">Blogs</a>
+                <a href="#service">Services</a>
+            </div>
+            <span class="follow">
+                <h4 class="text">Follow Us:</h4>
+                <a href="https://www.facebook.com/profile.php?id=100016723301677"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://instagram.com/zain.ansari439?igshid=YmMyMTA2M2Y="><i class="fa-brands fa-instagram-square"></i></a>
+                <a href="https://github.com/zainansar41"><i class="fa-brands fa-github-square"></i></a>
+            </span>
+        </div>
+        <div class="text">Copyright&copy; Designed by <a href="https://zainansar41.github.io/portfolio/">Zain ul Abidin</a>. All rights are reserved by ZZ enterprises</div>
+    </div>
+</body>
+<script>
+    let contact=document.querySelector('.contact');
+    contact.onclick = function(){
+        contact.classList.toggle('active');
+    }
+</script>
+
+</html>
