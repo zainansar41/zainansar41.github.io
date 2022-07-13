@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.counter{
+    background: url("abc.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+.counter .content{
+    min-height: 100vh;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+.counter .content .box{
+    width: calc(25% - 40px);
+    font-weight: 700;
+    font-size: 1.3em;
+    margin: 20px 10px;
+    border: 2px solid white;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 150px;
+    color: white;
+}
+.counter .content .box .icon{
+    margin: 15px 0px;
+    font-size: 30px;
+}
+.counter .content .box .count{
+    margin: 0 0 15px 0;
+    font-weight: 900;
+    font-size: 35px;
+}
+@media (max-width:1000px){
+    .counter .content{
+        flex-direction: column;
+    }
+    .counter .content .box{
+        width: calc(50% - 60px);
+        margin-bottom: 50px;
+    }
+}
+@media (max-width:550px){
+    .counter .content {
+        margin: 10px 30px;
+    }
+    .counter .content .box{
+        width: calc(90% - 90px);
+    }
+}
+@media (max-width:390px){
+    .counter .content {
+        margin: 10px 30px;
+    }
+    .counter .content .box{
+        width:100%;
+    }
+}
