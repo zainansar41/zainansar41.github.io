@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+Body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: violet;
+}
+.wrap{
+    width: 400px;
+    border-radius: 10px;
+    padding: 25px 15px;
+    background: white;
+}
+.wrap header{
+    text-align: center;
+    font-size: 1.5em;
+
+}
+.wrap form{
+    margin: 35px 0 20px;
+}
+.wrap form .row{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0 ;
+}
+.wrap form label{
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+form :where(textarea,select, button){
+    outline: none;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+}
+form .row textarea{
+    resize: none;
+    height: 100px;
+    border: 1px solid violet;
+    font-size: 14px;
+    padding: 10px;
+}
+form .row .outer{
+    height: 40px;
+    display: flex;
+    border: 1px solid #999;
+    align-items: center;
+    border-radius: 5px;
+    padding: 0 10px;
+}
+form .row .outer select{
+    font-size: 15px;
+}
+form button{
+    height: 50px;
+    background: linear-gradient(violet,purple);
+    color: aliceblue;
+    font-size: 16px;
+    cursor: pointer;
+}
+@media(max-width:600px){
+    .wrap{
+        width: 350px;
+        margin: 0 20px;
+    }
+}
