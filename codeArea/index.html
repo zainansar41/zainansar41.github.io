@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code selection</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+</head>
+
+<body>
+    <div class="text-box">
+        <h3>HTML Code</h3>
+        <div class="html-box">
+            <textarea readonly>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            
+            body {
+                min-height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: lightcyan;
+            }
+            
+            .text-box {
+                background: white;
+                border-radius: 10px;
+                width: 480px;
+                padding: 30px 30px 20px 30px;
+            }
+            
+            .text-box h3 {
+                text-align: center;
+                color: rgb(36, 135, 168);
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            
+            .text-box .html-box {
+                display: flex;
+                justify-content: center;
+                width: 420px;
+                position: relative;
+                margin: 30px 0px;
+            }
+            .text-box .html-box textarea{
+                width: 100%;
+                height: 250px;
+                outline: none;
+                resize: none;
+                border: 1px solid rgb(36, 135, 168);
+                padding: 20px 30px;
+                border-radius: 6px;
+                font-family: Arial, Helvetica, sans-serif
+            }
+            .text-box .html-box textarea::-webkit-scrollbar{
+                display: none;
+            }
+            .text-box .html-box .htmlBtn{
+                position: absolute;
+                right: 10px;
+                top: 10px;
+                background: none;
+                border: none;
+                cursor: pointer;
+            }
+            .text-box .html-box .htmlBtn i{
+                font-size: 20px;
+                transition: .5s ease;
+            }
+            .text-box .html-box .htmlBtn:hover i{
+                font-size: 22px;
+                color: red;
+            }</textarea>
+            <button class="htmlBtn" id="htmlBtn"><i class="fa-regular fa-copy"></i></button>
+        </div>
+    </div>
+</body>
+<script>
+    const textarea=document.querySelector("textarea");
+    const htmlBtn=document.getElementById("htmlBtn");
+    htmlBtn.onclick=function copy() {
+        textarea.select();
+        document.execCommand("copy");
+    }
+</script>
+
+</html>

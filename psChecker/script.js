@@ -88,6 +88,7 @@ function generate() {
         let randomChar=allChar[Math.floor(Math.random()  * allChar.length)];
         ps+=randomChar
         input.value=ps;
+        text.style.display="none";
     }
 }
 function copy() {
