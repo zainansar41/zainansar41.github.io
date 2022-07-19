@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Captcha</title>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
@@ -21,13 +21,19 @@
 </head>
 <body>
     <div class="wrap">
-        <header>Captcha in JS</header>
-        <div class="abc"><div class="captcha"></div></div>
-        <form action="#">
-            <input type="text" class="input" placeholder="Enter captcha" required>
-            <button class="check">Send</button>
+        <header>Capctha in JS</header>
+        <div class="captcha-area">
+            <div class="captcha-image">
+                <img src="recaptcha.jpg" alt="">
+                <span class="captcha"></span>
+            </div>
+            <button class="reload"><i class="fa-solid fa-arrow-rotate-right"></i></button>
+        </div>
+        <form action="#" class="input-area">
+            <input type="text" placeholder="Enter captcha" required>
+            <button class="check">Check</button>
         </form>
-        <div class="status">captcha doesnot matched. please try again</div>
+        <div class="status"></div>
     </div>
 </body>
 <script src="script.js"></script>

@@ -1,5 +1,6 @@
 const captcha=document.querySelector(".captcha"),
-input=document.querySelector(".input"),
+reload=document.querySelector(".reload"),
+input=document.querySelector("input"),
 statustxt=document.querySelector(".status"),
 check=document.querySelector(".check");
 
@@ -15,6 +16,10 @@ function getcaptcha() {
     }
 }
 getcaptcha();
+reload.addEventListener("click",()=>{
+    captcha.innerText="";
+    getcaptcha();
+})
 check.addEventListener("click",e =>{
     e.preventDefault();//prevents its actual behaviour
     statustxt.style.display="block";
@@ -26,12 +31,14 @@ check.addEventListener("click",e =>{
         statustxt.style.color="blue";
         captcha.innerText="";
         getcaptcha();
+        input.value="";
     }else{
         console.log("robot");
         statustxt.innerText="Capctha not matched. please try again"
         statustxt.style.color="red";
         captcha.innerText="";
         getcaptcha();
+        input.value="";
     }
 })
 
