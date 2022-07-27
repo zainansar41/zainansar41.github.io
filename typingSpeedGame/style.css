@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: turquoise;
+}
+
+.box {
+    background: white;
+    width: 770px;
+    border-radius: 10px;
+    padding: 35px;
+}
+.box .input{
+    position: absolute;
+    z-index: -999;
+    opacity: 0;
+}
+.box .content-box {
+    padding: 13px 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.content-box .typing-test {
+    max-height: 255px;
+    overflow-y: auto;
+}
+.content-box .typing-test::-webkit-scrollbar {
+    width: 0;
+}
+
+.content-box .typing-test span {
+    font-size: 18px;
+    text-align: justify;
+    letter-spacing: 1px;
+    position: relative;
+}
+.content-box .typing-test span.active{
+    color: #17a2b8;
+}
+.content-box .typing-test span.active::before
+{
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background: #17a2b8;
+    animation: blink 1s ease-in-out infinite;
+
+}
+@keyframes blink {
+    50%{
+        opacity: 1;
+    }
+}
+.content-box .typing-test span.correct{
+    color: #56964f;
+}
+.content-box .typing-test span.incorrect{
+    color: red;
+    background: rgb(255, 182, 182);
+    border-radius: 4px;
+    outline: none;
+}
+
+.content-box .content {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    margin-top: 14px;
+    border-top: 1px solid #ccc;
+}
+
+.content .detail {
+    display: flex;
+    width: calc(100% - 140px);
+    justify-content: space-between;
+}
+
+.detail li {
+    list-style: none;
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+}
+.detail li:not(:first-child){
+    border-left: 1px solid #ccc;
+    padding-left: 10px;
+}
+.detail li span{
+    display: block;
+    margin-left: 10px;
+}
+.detail li:not(:first-child) span{
+    font-weight: 500;
+}
+.content button{
+    background: rgb(33, 116, 107);
+    border: none;
+    outline: none;
+    width: 100px;
+    padding: 8px 0;
+    color: white;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 18px;
+}
